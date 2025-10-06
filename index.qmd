@@ -12,6 +12,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Tunok24
+    - icon: envelope
+      text: Email
+      href: "mailto:tunok.24&#64;gmail&#46;com"
 format:
   html:
     toc: false
@@ -45,12 +48,12 @@ Together, these established a baseline FFM-CBCT system capable of selective dose
 :::
 :::
 
-Completed B.Math in Mathematical Physics with minors in Computer Science and Pure Math at the uWaterloo (2024).
+I completed B.Math in Mathematical Physics with minors in Computer Science and Pure Math at the uWaterloo (2024).
 Joined **UHN (Princess Margaret Cancer Centre)** and worked with [Dr. G. Bootsma](https://technauhn.ca/people/gregory-bootsma/) on FFMCBCT as a co-op and returned full-time after graduation.
 
 ## Right Now
-We’re extending the FFM-CBCT platform by linking **simulation + benchtop** into a single framework  
-capable of retrieving the **material properties** of scanned objects directly from measured data.  
+We’re extending the FFM-CBCT platform by linking simulation + benchtop into a single framework  
+capable of retrieving the material properties of scanned objects directly from measured data.  
 This combined approach could allow quantitative imaging for proton therapy and stereotactic radiosurgery, 
 where knowing a tissue’s true composition *and location* means tighter range prediction and more accurate dose delivery.
 
