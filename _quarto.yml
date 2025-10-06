@@ -3,7 +3,7 @@ project:
   output-dir: _site # local build output; not published yet
 
 website:
-  title: "Tunok Mondol"
+  title: "Tunok MONDOL"
   # image: cover.jpeg
   site-url: https://Tunok24.github.io
   search: true
