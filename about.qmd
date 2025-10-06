@@ -1,0 +1,25 @@
+---
+title: "this is the about page."
+subtitle: "_“Cats will amusingly tolerate humans only until someone comes up with a tin opener that can be operated with a paw.”_ - T. Pratchett (Men At Arms)"
+about:
+  template: solana
+  # image: photos/cover.jpeg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/tunok/
+    - icon: github
+      text: Github
+      href: https://github.com/Tunok24
+format:
+  html:
+    toc: false
+    smooth-scroll: true
+    css: [styles.css, home.css]         # add home-only CSS (next step)
+page-layout: article
+title-block-banner: photos/cover.jpeg # <-- THIS creates the cover/hero
+title-block-banner-overlay: true      # darken for readability
+title-block-banner-color: "#00000080" # overlay (optional)
+title-block-banner-height: 30vh   # try 30–60vh
+
+---

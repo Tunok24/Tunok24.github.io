@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site # local build output; not published yet
+
+website:
+  title: "Tunok Mondol"
+  # image: cover.jpeg
+  search: true
+  navbar:
+    left:
+      # - text: About
+      #   href: about.qmd
+      - text: Work
+        href: work.qmd
+      - text: Interests
+        href: interests.qmd
+  reader-mode: false
+  page-footer:
+    center: |
+      ***Statistics suggest people only build personal websites when they want to get in somewhere. This one is still under construction, which says a lot.***
+    left: "© 2025 Tunok Mondol"
+    right: "Last updated: Oct 5, 2025"
+
+  # open-graph:
+  #   title: "Title for Open Graph"
+
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "**Alert** - this is some information that you should pay attention to"
+  #   type: primary
+  #   position: below-navbar
+
+  # google-analytics: "UA-XXXXXXXX"
+
+format:
+  html:
+    mainfont: "Segoe UI"
+    theme:
+      dark: darkly
+      light: flatly
+    css: styles.css
+    toc: true
+    smooth-scroll: true

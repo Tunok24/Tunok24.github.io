@@ -1,0 +1,70 @@
+---
+title: ""
+subtitle: "_“Cats will amusingly tolerate humans only until someone comes up with a tin opener that can be operated with a paw.”_ - T. Pratchett (Men At Arms)"
+
+about:
+  template: solana
+  # image: photos/cover.jpeg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/tunok/
+    - icon: github
+      text: Github
+      href: https://github.com/Tunok24
+format:
+  html:
+    toc: false
+    smooth-scroll: true
+    css: [styles.css]         # add home-only CSS (next step)
+page-layout: article
+title-block-banner: photos/cover.jpeg
+title-block-banner-overlay: false
+title-block-banner-height: 100vh   # try 30–60vh
+
+---
+#### Check <span style="color:red; font-size:20px; font-family:Courier New;">one two . . .</span>
+::: {.pair}
+::: {.pair-text}
+
+I recently completed the the first phase of our development of **Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT)** system —  
+it began as a simulation framework and then evolved into a full benchtop implementation.
+We built and validated:
+
+1. **Implementation & simulation** on our GPU-accelerated Monte Carlo platform (GPUMCI);  
+2. **Benchtop demonstration** of dynamic fluence control with a rectangular collimator;  
+3. **Processing pipelines** to compensate for fluence-dependent intensity variation in reconstruction;  
+4. **Scatter-reduction and correction methods** to recover uniform image quality at reduced dose.
+
+Together, these established a baseline FFM-CBCT system capable of selective dose shaping and region-of-interest imaging.
+
+:::
+
+::: {.pair-media}
+![Photo Credit: S. B. Antu](photos/tohellwithadecentphoto.jpg){width=85%}
+:::
+:::
+
+Completed B.Math in Mathematical Physics with minors in Computer Science and Pure Math at the uWaterloo (2024).
+Joined **UHN (Princess Margaret Cancer Centre)** and worked with [Dr. G. Bootsma](https://technauhn.ca/people/gregory-bootsma/) on FFMCBCT as a co-op and returned full-time after graduation.
+
+## Right Now
+We’re extending the FFM-CBCT platform by linking **simulation + benchtop** into a single framework  
+capable of retrieving the **material properties** of scanned objects directly from measured data.  
+This combined approach could allow quantitative imaging for proton therapy and stereotactic radiosurgery, 
+where knowing a tissue’s true composition *and location* means tighter range prediction and more accurate dose delivery.
+
+Here's the poster we've presented at AAPM (2025).
+
+## Earlier threads
+
+::: {.pair}
+::: {.pair-text}
+In high school I was active with [BDOAA](https://bdoaa.org) and represented Bangladesh at IOAA 2018. 
+It was a lot of night skies, problem sets, and lifelong friends. Good ol' times.
+:::
+
+::: {.pair-media}
+![IOAA 2018, Beijing — with the team](photos/lookingattheceilingnotthesky.jpg)
+:::
+:::
