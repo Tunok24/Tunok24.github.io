@@ -54,8 +54,6 @@ capable of retrieving the **material properties** of scanned objects directly fr
 This combined approach could allow quantitative imaging for proton therapy and stereotactic radiosurgery, 
 where knowing a tissue’s true composition *and location* means tighter range prediction and more accurate dose delivery.
 
-Here's the poster we've presented at AAPM (2025).
-
 ## Earlier threads
 
 ::: {.pair}
