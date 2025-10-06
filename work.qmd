@@ -107,6 +107,7 @@ And, because I just wanted to check there's no worms inside the cabbage me and m
 #### And here's the poster we've presented at AAPM 2025 in DC.
 
 ![](photos/aapmposter.jpg){width=100% fig-alt="AAPM 2025 poster"}
+And here's the [abstract](https://aapm2025explorer-production.up.railway.app/detail/971)
 
 #### References:
 1. [Bartolac S., et al. Fluence field optimization for noise and dose objectives in CT.](https://pubmed.ncbi.nlm.nih.gov/21978114/)
