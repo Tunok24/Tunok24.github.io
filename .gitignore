@@ -2,3 +2,7 @@ _site/
 .quarto/
 .ipynb_checkpoints/
 .DS_Store
+_site/
+.quarto/
+.ipynb_checkpoints/
+.DS_Store

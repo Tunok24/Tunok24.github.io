@@ -5,6 +5,7 @@ project:
 website:
   title: "Tunok Mondol"
   # image: cover.jpeg
+  site-url: https://Tunok24.github.io
   search: true
   navbar:
     left:
