@@ -1,0 +1,137 @@
+/* css styles */
+/* -------- Apple-ish dark (not pitch black) -------- */
+:root[data-theme="dark"] {
+    /* soften the dark theme a bit */
+    --bs-body-bg: #1c1c1e;
+    /* iOS-like charcoal */
+    --bs-body-color: #e7e7ea;
+    --bs-card-bg: #262629;
+    --bs-card-border-color: #2f2f33;
+    --bs-border-color: #2a2a2e;
+}
+
+/* Optional: lighten code blocks in dark mode */
+:root[data-theme="dark"] pre,
+:root[data-theme="dark"] code {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* styles.css */
+.quarto-title-meta .quarto-pub-date {
+    display: none;
+}
+
+.navbar,
+#quarto-header>nav.navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+/* Ensure links stay readable over the banner */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand,
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.quarto-title .quarto-subtitle {
+    color: #ffffff !important;
+    /* white */
+}
+
+
+/* -------- Reusable “text left / image right” block -------- */
+/* Usage:
+::: {.pair}
+::: {.pair-text}
+Text paragraphs…
+:::
+::: {.pair-media}
+![Caption](images/whatever.jpg)
+:::
+:::
+*/
+
+.pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 1.25rem 0;
+}
+
+.pair-text> :first-child {
+    margin-top: 0;
+}
+
+.pair-media figure,
+.pair-media img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .pair {
+        grid-template-columns: 1fr;
+    }
+
+    /* Keep image after text on mobile */
+    .pair-media {
+        order: 2;
+    }
+}
+
+/* Subtle, minimalist vibe */
+.figure-caption {
+    color: #8b8b92;
+}
+
+.contact-wrap {
+    max-width: 720px;
+    margin: 2rem auto;
+}
+
+.field {
+    display: grid;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.field>span {
+    font-size: .9rem;
+    opacity: .8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid var(--border, #334155);
+    border-radius: .75rem;
+    background: var(--panel, #111827);
+    color: inherit;
+}
+
+button[type="submit"] {
+    padding: .7rem 1.1rem;
+    border-radius: .75rem;
+    border: 1px solid var(--border, #334155);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    filter: brightness(1.1);
+}
+
+.status {
+    margin-top: .5rem;
+    font-size: .95rem;
+    opacity: .9;
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "interests.html",
+    "href": "interests.html",
+    "title": "Interests",
+    "section": "",
+    "text": "I owe my reading habit to Douglas Adams—both The Hitchhiker’s Guide to the Galaxy (the “trilogy in five parts”) and Dirk Gently.\nI’m slowly downloading audiobooks:\n\n[Douglas Adams] The Hitchhiker’s Guide to the Galaxy (trilogy of five) - read by the main man himself.\n[Terry Pratchett] Discworld Series (41 novels) - performed by Nigel Planer (personal favorite) and Stephen Briggs.\n[A. C. Doyle] Sherlock Holmes - performed by Stephen Fry\n[G. Orwell] 1984 - ’’\n[P. G. Woodehouse] The Inimitable Jeeves - ’’\n[Robert Sheckley] Dimension of Miracles - performed by John Hodgman\n[Kurt Vonnegut] Sirens of Titan - ¯\\(ツ)/¯\n\nmore on this to be added later .."
+  },
+  {
+    "objectID": "interests.html#books",
+    "href": "interests.html#books",
+    "title": "Interests",
+    "section": "",
+    "text": "I owe my reading habit to Douglas Adams—both The Hitchhiker’s Guide to the Galaxy (the “trilogy in five parts”) and Dirk Gently.\nI’m slowly downloading audiobooks:\n\n[Douglas Adams] The Hitchhiker’s Guide to the Galaxy (trilogy of five) - read by the main man himself.\n[Terry Pratchett] Discworld Series (41 novels) - performed by Nigel Planer (personal favorite) and Stephen Briggs.\n[A. C. Doyle] Sherlock Holmes - performed by Stephen Fry\n[G. Orwell] 1984 - ’’\n[P. G. Woodehouse] The Inimitable Jeeves - ’’\n[Robert Sheckley] Dimension of Miracles - performed by John Hodgman\n[Kurt Vonnegut] Sirens of Titan - ¯\\(ツ)/¯\n\nmore on this to be added later .."
+  },
+  {
+    "objectID": "interests.html#artworks",
+    "href": "interests.html#artworks",
+    "title": "Interests",
+    "section": "Artworks",
+    "text": "Artworks\nI never trained formally, and I draw occassionally thanks to epiphanies. But mostly, because I got a couple childhood friends who inspire me a lot. Current quest: recreate scenes from sci-fi passages from the books I read and loved.\n(if you’d like to see them, you’ll have to ask nicely first ಠ‿↼ )\nInspirations: grickle, cigstudio, the authors and a rotating cast of artists I stumble upon."
+  },
+  {
+    "objectID": "interests.html#cooking",
+    "href": "interests.html#cooking",
+    "title": "Interests",
+    "section": "Cooking",
+    "text": "Cooking\nHere’s some of my conjurations from the kitchen - stuff I’d actually make twice because they are not just hearty, but lungy and livery too. One of them is tea of course. Tea is an amazingly useful thing, it gives me an excuse to talk to anyone."
+  },
+  {
+    "objectID": "interests.html#games",
+    "href": "interests.html#games",
+    "title": "Interests",
+    "section": "Games",
+    "text": "Games\nMostly retro—they’ve aged well imo:\n\nAOE II,\nAOM (gotta play the Retold),\nCommandos,\nC&C Tiberian Sun - recently finished on an M2 via Porting Kit,\nLast Blade 2 - play multiplayer on FightCade2 with others around the world\n\n… here, I intend to put screenshots and possibly recordings of my favorite moments I guess.\n\nOther than those, I prefer long walks along lakeshore, beaches, parks and the lanes of intrusive thoughts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tunok MONDOL",
+    "section": "",
+    "text": "I recently completed the the first phase of our development of Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT) system —\nit began as a simulation framework and then evolved into a full benchtop implementation. We built and validated:\n\nImplementation & simulation on our GPU-accelerated Monte Carlo platform (GPUMCI);\n\nBenchtop demonstration of dynamic fluence control with a rectangular collimator;\n\nProcessing pipelines to compensate for fluence-dependent intensity variation in reconstruction;\n\nScatter-reduction and correction methods to recover uniform image quality at reduced dose.\n\nTogether, these established a baseline FFM-CBCT system capable of selective dose shaping and region-of-interest imaging.\n\n\n\n\n\nPhoto Credit: S. B. Antu\n\n\n\n\nI completed B.Math in Mathematical Physics with minors in Computer Science and Pure Math at the uWaterloo (2024). Joined UHN (Princess Margaret Cancer Centre) and worked with Dr. G. Bootsma on FFMCBCT as a co-op and returned full-time after graduation."
+  },
+  {
+    "objectID": "index.html#right-now",
+    "href": "index.html#right-now",
+    "title": "Tunok MONDOL",
+    "section": "Right Now",
+    "text": "Right Now\nWe’re extending the FFM-CBCT platform by linking simulation + benchtop into a single framework\ncapable of retrieving the material properties of scanned objects directly from measured data.\nThis combined approach could allow quantitative imaging for proton therapy and stereotactic radiosurgery, where knowing a tissue’s true composition and location means tighter range prediction and more accurate dose delivery."
+  },
+  {
+    "objectID": "index.html#earlier-threads",
+    "href": "index.html#earlier-threads",
+    "title": "Tunok MONDOL",
+    "section": "Earlier threads",
+    "text": "Earlier threads\n\n\nIn high school I was active with BDOAA and represented Bangladesh at IOAA 2018. It was a lot of night skies, problem sets, and lifelong friends. Good ol’ times.\n\n\n\n\n\nIOAA 2018, Beijing — with the team"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Tunok MONDOL",
+    "section": "",
+    "text": "Say hello\n\n\n\n Name (optional)  \n\n Message\n\n\n\n Reply-to (optional email)  \n\n\n\n\n\nSend"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "This page is a log of the stuff I’ve been up to. I’ll add plots, code snippets, descriptions and photos as the projects progress.\n\nA. CT ↔︎ MC Model Training (Continued work from Ffmcbct)\n\nGoal: Mapping Simulated CT to Monte Carlo (MC) phantom.\n\nRegistration: Rigid/affine (for now) steps to line up the CT volume with the MC phantom grid; handling voxel spacing and orientation.\n\nHU → Materials: Convert HU to density/material classes (water, bone, soft tissue, etc.), then to the properties MC codes expect (indices, densities).\n\nModels: start simple with UNet for segmentation/material labeling. Explore CycleGAN for domain translation (e.g., CT kernel harmonization or CT↔︎density).\n\nLatent Space Recon: To reconstruct with missing data in FFM mode. (this is very interesting - analytically as well as from ML application viewpoint)\n\n\n\n\nRegistration: CT &lt;-&gt; MC model\n\n\n\n\nReferences:\n\nKabelac A., et al. Latent space reconstruction for missing data problems in CT.\nTang C., et al. Unpaired LDCT Denoising Network Based on CycleGAN with Prior Image Information\n\n\n\n\n\nB. Fluence-Field-Modulated CBCT (FFM-CBCT)\n\n\nThe Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT) project at UHN – Princess Margaret Cancer Centre explores how dynamically shaping X-ray fluence in space and time can reduce unnecessary dose while maintaining, or even improving, image quality in regions that matter most.\nOur early phase focused on building the entire workflow — from GPU-based simulation to benchtop validation — and characterizing the physics that drive it.\n\n\n\n\n\nGPUMCI simulation of FFM-CBCT on a head phantom with synthetic inserts\n\n\n\n\n\nMethods:\n\nGPUMCI Simulation: implemented FFM exposure control inside a GPU-accelerated Monte Carlo engine, enabling high-fidelity projections for arbitrary collimator patterns.\n\nBenchtop demonstration: replicated those fluence patterns on the hardware system, proving controllable ROI-specific illumination in practice.\n\nFluence compensation: designed and tested correction routines to normalize projection intensity before reconstruction, mitigating the sharp transitions that modulation introduces.\n\nScatter modeling and correction: used simulation-based estimates and polynomial-surface fitting to recover the background field, accounting for both scattered and off-focal radiation.\n\nAnalysis and visualization: built lightweight tools for projection viewing, normalization checks, and fluence-versus-dose comparison.\n\nThese experiments established a fully functional FFM-CBCT pipeline capable of toggling between simulation and physical imaging — a platform for controlled dose-reduction and physics-driven image correction.\n\n\n\nBenchtop demonstration — comparison between FFM (left) and Standard (rigth) CBCT modes\n\n\n\n\n\nScatter Correction\nWhen the rectangular collimator limits the X-ray beam to a defined ROI, the “dark” detector region still records signal — largely from scatter and off-focal radiation.\nInstead of discarding this information, we used it to estimate scatter distributions and study the contribution of off-focal radiation as a secondary imaging channel.\nThis helped characterize how residual signal in non-illuminated regions encodes useful background information and how that can be leveraged for more accurate corrections.\n\n\n\n\n\nFFM signal. Primary in the ROI. Though the dark region, colliamtor shadow as we call it, or sometimes latent-space, is not devoid of useful signal.\n\n\n\n\n\n\nResults\nReconstruction experiments were performed using both our GPU-based Monte Carlo (MC) simulations and the benchtop FFM-CBCT prototype, showing clear improvements in image quality (IQ) while lowering exposure.\n\nImage quality gains: In test-phantom studies, the signal-to-noise ratio (SNR) improved by 75–150 % and the contrast-to-noise ratio (CNR) by 45–95 % within the region of interest (ROI).\n\nDose efficiency: MC simulations indicated that comparable image quality could be maintained in the ROI while reducing the total patient-equivalent dose by more than 50 %.\n\n\n\n\n\n\nCBCT of a cabbage\n\n\n\n\n\nComponent separation: Simulations demonstrated separation of primary, scatter, and off-focal radiation (OFR) components, enabling targeted scatter estimation and correction.\n\nArtifact and noise suppression: Physical reconstructions showed artifact reduction, noise suppression, and contrast enhancement when compared to standard CBCT.\n\nROI-specific imaging: Selective fluence exposure allowed targeted imaging with minimal full-field burden, supporting the feasibility of task-based dose allocation.\n\nA representative summary from our benchtop results is shown below.\n\n\n\nROI\n% Δ SNR (FFM – CBCT)\n% Δ CNR (FFM – CBCT)\n\n\n\n\n1\n19.34\n25.09\n\n\n2\n8.14\n3.44\n\n\n3\n2.55\n11.44\n\n\n4\n17.41\nN/A\n\n\n\nOverall, the simplified setup and physical constraints of the FFM-CBCT design reduced dose while improving image contrast and noise performance.\nScatter and OFR signals from behind the shutter—normally discarded—were found to contain recoverable information that could be exploited by future DL techniques to further enhance IQ.\nAnd, because I just wanted to check there’s no worms inside the cabbage me and my landlord picked from his garden — I ran an FFMCBCT of it. You’ll find it somewhere above.\n\nAnd here’s the poster we’ve presented at AAPM 2025 in DC.\n \n\n\nReferences:\n\nBartolac S., et al. Fluence field optimization for noise and dose objectives in CT.\nBootsma G., et al. Efficient scatter distribution estimation and correction in CBCT using concurrent MC fitting.\nAdler. J., et al. “GPUMCI, a flexible platform for X-ray imaging on the GPU. 2017.\n\n\n\n\n\nC. Muon Spectroscopy & Beamline Simulation (TRIUMF)\n\n\n\nStack: Geant4 / G4Beamline for the beamline in-silica model; OPERA3D for EM field models for the optic components.\nTuning: Parameter sweeps + GMinuit optimization for optics and transport.\n\nResult: Configured virtual model of M20 for surface-muon transport and spectroscopy; a digital twin for the real-life beamline.\nDeliverable:\n\nStable focal spot at the experimental target with constraints on acceptance and momentum spread.\nOptimized for future Kicker installation. A hyperfast kicker is required to direct beam delivery towards either of two legs.\nChoosable polarization.\nMimics current configuration and allows for future changes to real-life beamline without costly beamtimes.\n\n\n\n\n\n\n\nM20 Separator in G4BL with EM Field modelled in Opera3D\n\n\n\n\n\n\n\n\n\nG4Beamline M20 Model\n\n\n\n\n\n\n\nBeamline Envelope\n\n\n\n\n\n\nD. Related Topic of interests\n\nPhysics-Informed Machine Learning\nDynamic Systems\nLearning French\n\ndescriptions to be added …\n\n\nE. Essay Projects\nThese are something I’ve worked on during undergrad either solo or with other students. (others to be added …)\n\n\n\nHiggs–R² Cosmology: a tour through inflation with higher-order curvature and how it plays with observations.\n\n\n\n\n\n\nVacuum Driven Inflationary Cosmology\n\n\n\n\n\n\n\nBoson Sampling: notes on complexity, photonic implementations, and why it’s hard to fake.\n\n\n\n\n\n\nBoson Sampling"
+  }
+]
