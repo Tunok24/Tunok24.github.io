@@ -16,6 +16,9 @@ website:
         href: work.qmd
       - text: Interests
         href: interests.qmd
+    right:
+      - text: Contact
+        href: contact.qmd
   reader-mode: false
   page-footer:
     center: |

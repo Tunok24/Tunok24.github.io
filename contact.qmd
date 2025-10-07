@@ -1,0 +1,68 @@
+<section id="contact" class="contact-wrap">
+  <h2>Say hello</h2>
+
+  <form id="contact-form" action="https://formspree.io/f/xblzagel" method="POST" novalidate>
+    <!-- Optional name (anonymous if left blank) -->
+    <label class="field">
+      <span>Name (optional)</span>
+      <input type="text" name="name" autocomplete="name" />
+    </label>
+
+    <!-- Your message -->
+    <label class="field">
+      <span>Message</span>
+      <textarea name="message" rows="6" required placeholder="Write your note here…"></textarea>
+    </label>
+
+    <!-- (Optional) a way for you to reply if they choose to share -->
+    <label class="field">
+      <span>Reply-to (optional email)</span>
+      <input type="email" name="reply_to" autocomplete="email" placeholder="you@example.com" />
+    </label>
+
+    <!-- Email subject you’ll see -->
+    <input type="hidden" name="_subject" value="New message from Tunok24.github.io" />
+
+    <!-- Honeypot (spam trap) -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+    <button type="submit">Send</button>
+
+    <!-- Success/Error inline feedback -->
+    <p id="form-status" class="status" aria-live="polite" hidden></p>
+  </form>
+</section>
+
+<script>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.hidden = true;
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.reset();
+          status.textContent = "Thanks! Your message was sent.";
+          status.hidden = false;
+        } else {
+          const j = await res.json().catch(() => ({}));
+          status.textContent = j.errors ? j.errors.map(e => e.message).join(' ') : "Hmm, something went wrong. Please try again.";
+          status.hidden = false;
+        }
+      } catch (err) {
+        status.textContent = "Network error. Please try again.";
+        status.hidden = false;
+      }
+    });
+  })();
+</script>
