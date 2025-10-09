@@ -26,7 +26,7 @@ title-block-banner-overlay: false
 title-block-banner-height: 60vh   # try 30–60vh
 
 ---
-#### Check <span style="color:red; font-size:20px; font-family:Courier New;">one two . . .</span>
+
 ::: {.pair}
 ::: {.pair-text}
 
