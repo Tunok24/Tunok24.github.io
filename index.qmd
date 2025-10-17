@@ -27,10 +27,7 @@ title-block-banner-height: 60vh   # try 30–60vh
 
 ---
 
-::: {.pair}
-::: {.pair-text}
-
-I recently completed the the first phase of our development of **Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT)** system —  
+We've recently completed the the first phase of our development of **Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT)** system —  
 it began as a simulation framework and then evolved into a full benchtop implementation.
 We built and validated:
 
@@ -41,12 +38,6 @@ We built and validated:
 
 Together, these established a baseline FFM-CBCT system capable of selective dose shaping and region-of-interest imaging.
 
-:::
-
-::: {.pair-media}
-![Photo Credit: S. B. Antu](photos/tohellwithadecentphoto.jpg){width=85%}
-:::
-:::
 
 I completed B.Math in Mathematical Physics with minors in Computer Science and Pure Math at the uWaterloo (2024).
 Joined **UHN (Princess Margaret Cancer Centre)** and worked with [Dr. G. Bootsma](https://technauhn.ca/people/gregory-bootsma/) on FFMCBCT as a co-op and returned full-time after graduation.

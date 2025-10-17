@@ -81,7 +81,7 @@ Reconstruction experiments were performed using both our **GPU-based Monte Carlo
 
 :::
 ::: {.pair-media}
-![CBCT of a cabbage](photos/ctCabbage.png){width=80% fig-alt="CT of a cabbage"}
+![Custom 3D Viewer: CT of a Cabbage](photos/3dviewer.gif){width=100% fig-alt="3D view of Cabbage CT"}
 :::
 :::
 
@@ -145,15 +145,7 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 :::
 :::
 
-### D. Related Topic of interests
-
-1. Physics-Informed Machine Learning
-2. Dynamic Systems
-3. Learning French
-
-descriptions to be added ...
-
-### E. Essay Projects
+### D. Essay Projects
 
 These are something I've worked on during undergrad either solo or with other students. _(others to be added ...)_
 
@@ -172,6 +164,36 @@ These are something I've worked on during undergrad either solo or with other st
 :::
 ::: {.pair-media}
 ![Boson Sampling](photos/bosonsamp.png){width=50%}
+:::
+:::
+
+
+### E. Dynamic Systems
+
+::: {.pair}
+::: {.pair-media}
+![Grav Field Visualized](photos/grav.mp4){width=100% poster="photos/grav_thumb.png"}
+:::
+::: {.pair-text}
+1. Descriptions to be added ...
+:::
+:::
+
+::: {.pair}
+::: {.pair-media}
+![Chen Lee Attractor](photos/ChenLeeAnimated1.mp4){width=100% poster="photos/chenlee_thumb.png"}
+:::
+::: {.pair-text}
+2. Descriptions to be added ...
+:::
+:::
+
+::: {.pair}
+::: {.pair-media}
+![Rossler Attractor](photos/Rossler_attractor.mp4){width=100% poster="photos/rossler_thumb.png"}
+:::
+::: {.pair-text}
+3. Descriptions to be added ...
 :::
 :::
 

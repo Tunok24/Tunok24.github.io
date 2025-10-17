@@ -43,6 +43,48 @@
     /* white */
 }
 
+/* Keep the “cover” look but control where it crops from */
+.quarto-title-block .quarto-title-banner {
+    background-size: cover !important;
+    /* default behavior */
+    background-position: center bottom 38% !important;
+    /* or 'center 20%' etc. */
+    min-height: 30vh;
+    position: relative;
+    /* your preferred height like "40vh" */
+}
+
+/* Optional: add a subtle overlay to improve text legibility if you re-enable overlay */
+.quarto-title-block .quarto-title-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .35));
+    pointer-events: none;
+}
+
+.quarto-title-block .subtitle {
+    position: absolute;
+    bottom: 1.5rem;
+    /* distance from bottom edge */
+    right: 2rem;
+    /* distance from right edge */
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: right;
+    opacity: 0.95;
+    max-width: 50ch;
+    /* optional: wraps long quotes nicely */
+    line-height: 1.4;
+    color: #f3f3f3;
+    /* tweak for legibility if needed */
+}
+
+/* Optional: ensure title (if any) doesn’t overlap oddly */
+.quarto-title-block .title {
+    margin-bottom: 0.5rem;
+}
 
 /* -------- Reusable “text left / image right” block -------- */
 /* Usage:
@@ -73,6 +115,18 @@ Text paragraphs…
     width: 100%;
     height: auto;
 }
+
+/* Style all inline videos like your .pair-media blocks */
+.pair-media video {
+    width: 100%;
+    border-radius: 1rem;
+    /* optional, for aesthetics */
+    display: block;
+    background-color: #000;
+    /* fallback for when poster not yet loaded */
+    object-fit: cover;
+}
+
 
 @media (max-width: 992px) {
     .pair {
