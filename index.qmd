@@ -1,6 +1,7 @@
 ---
 title: ""
-subtitle: "_“He could think in italics. Such people need watching. Preferably from a safe distance.”_ - T. P. (Men At Arms)"
+# subtitle: "_“He could think in italics. Such people need watching. Preferably from a safe distance.”_ - T. P. (Men At Arms)"
+subtitle: ""
 
 about:
   template: solana

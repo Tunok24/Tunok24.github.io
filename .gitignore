@@ -6,6 +6,7 @@ _site/
 .quarto/
 .ipynb_checkpoints/
 .DS_Store
+GEMINI.md
 
 /.quarto/
 **/*.quarto_ipynb
