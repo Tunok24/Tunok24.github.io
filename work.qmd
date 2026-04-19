@@ -20,7 +20,7 @@ This study focuses on building waveguides models and beam physics to manage the 
 
 :::
 ::: {.pair-media}
-![Dynamic visualization of DWA modules firing in synchronization with the proton bunch.](photos/dwa_beamline_anim.gif){width=100% fig-alt="DWA Beamline Animation"}
+![Visualization of DWA segment firing](photos/dwa_beamline_anim.gif){width=100% fig-alt="DWA Beamline Animation"}
 :::
 :::
 
