@@ -7,6 +7,7 @@ _site/
 .ipynb_checkpoints/
 .DS_Store
 GEMINI.md
+photos/
 
 /.quarto/
 **/*.quarto_ipynb

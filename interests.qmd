@@ -15,58 +15,38 @@ I’m slowly downloading audiobooks:
 
 - [Douglas Adams] The Hitchhiker's Guide to the Galaxy (trilogy of five) - read by the main man himself.
 - [Terry Pratchett] Discworld Series (41 novels) - performed by Nigel Planer (personal favorite) and Stephen Briggs.
-- [A. C. Doyle] Sherlock Holmes - performed by Stephen Fry
-- [G. Orwell] 1984 -                          ''
 - [P. G. Woodehouse] The Inimitable Jeeves -  ''
 - [Robert Sheckley] Dimension of Miracles -   performed by John Hodgman
-- [Kurt Vonnegut] Sirens of Titan - ¯\\_(ツ)_/¯
+- [Kurt Vonnegut] Sirens of Titan - performed by ...
 
 more to be added ...
 
-<!--
-### Favorite Quote (placeholder)
-> _Drop a quote here, with page/timecode._
--->
 
-<!-- 
-### My Thoughts
-Here goes a short descript of what I thought about a specific book I've read.
+## Earlier threads
 
+::: {.pair}
+::: {.pair-text}
+I was active with [BDOAA](https://bdoaa.org) and represented Bangladesh at IOAA 2018. 
+It was a lot of night skies, problem sets, and lifelong friends. Good ol' times.
+:::
 
-![Book shelf (placeholder)](images/interests/bookshelf.jpg){fig-alt="Bookshelf placeholder" fig-cap="Future stack of Discworld spines goes here."}
--->
+::: {.pair-media}
+![IOAA 2018, Beijing — with the team](photos/lookingattheceilingnotthesky.jpg)
+:::
+:::
 
-## Artworks
+### Also Meet Heidi
 
-I never trained formally, and I draw occassionally thanks to epiphanies. But mostly, because I got a couple childhood friends who inspire me a lot. Current quest: recreate scenes from sci-fi passages from the books I read and loved.
+::: {.pair}
+::: {.pair-text}
+the derpy, alien cat.
+:::
 
-_(if you’d like to see them, you’ll have to ask nicely first ಠ‿↼ )_
+::: {.pair-media}
+![Heidi the derpy cat](photos/derp.jpg)
+:::
+:::
 
-**Inspirations:** grickle, cigstudio, the authors and a rotating cast of artists I stumble upon.
-
-
-## Cooking
-Here's some of my conjurations from the kitchen - stuff I'd actually make twice because they are not just hearty, but lungy and livery too.
-
-One of them is tea of course. Tea is an amazingly useful thing, it gives me an excuse to talk to anyone.
-
-<!--
-![Kitchen counter (placeholder)](images/interests/cooking.jpg){fig-alt="Cooking placeholder" fig-cap="Action shot of something that didn’t burn."}
-
-![Lake shot (placeholder)](images/interests/lake.jpg){fig-alt="Lakeshore placeholder" fig-cap="Quiet water, long path, no notifications."}
--->
-
-## Games
-
-Mostly retro—they’ve aged well imo: 
-  
-  1. AOE II, 
-  2. AOM (not the Retold), 
-  3. Commandos, 
-  4. C&C Tiberian Sun - recently finished on an M2 via Porting Kit, 
-  5. Last Blade 2 - play multiplayer on FightCade2 with others around the world
-
-  _more to be added ..._
 
 
 ##### Other than those, I prefer long walks along lakeshore, beaches, parks and the lanes of intrusive thoughts.

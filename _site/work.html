@@ -81,6 +81,35 @@ gtag('config', 'G-V2HLWE6MG6', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -295,11 +324,12 @@ gtag('config', 'G-V2HLWE6MG6', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a.-ct-mc-model-training-continued-work-from-ffmcbct" id="toc-a.-ct-mc-model-training-continued-work-from-ffmcbct" class="nav-link active" data-scroll-target="#a.-ct-mc-model-training-continued-work-from-ffmcbct">A. CT ↔︎ MC Model Training (Continued work from Ffmcbct)</a></li>
-  <li><a href="#b.-fluence-field-modulated-cbct-ffm-cbct" id="toc-b.-fluence-field-modulated-cbct-ffm-cbct" class="nav-link" data-scroll-target="#b.-fluence-field-modulated-cbct-ffm-cbct">B. Fluence-Field-Modulated CBCT (FFM-CBCT)</a></li>
-  <li><a href="#c.-muon-spectroscopy-beamline-simulation-triumf" id="toc-c.-muon-spectroscopy-beamline-simulation-triumf" class="nav-link" data-scroll-target="#c.-muon-spectroscopy-beamline-simulation-triumf">C. Muon Spectroscopy &amp; Beamline Simulation (TRIUMF)</a></li>
-  <li><a href="#d.-essay-projects" id="toc-d.-essay-projects" class="nav-link" data-scroll-target="#d.-essay-projects">D. Essay Projects</a></li>
-  <li><a href="#e.-dynamic-systems" id="toc-e.-dynamic-systems" class="nav-link" data-scroll-target="#e.-dynamic-systems">E. Dynamic Systems</a></li>
+  <li><a href="#a.-compact-proton-accelerator" id="toc-a.-compact-proton-accelerator" class="nav-link active" data-scroll-target="#a.-compact-proton-accelerator">A. Compact Proton Accelerator</a></li>
+  <li><a href="#b.-ct-mc-model-training-continued-work-from-ffmcbct" id="toc-b.-ct-mc-model-training-continued-work-from-ffmcbct" class="nav-link" data-scroll-target="#b.-ct-mc-model-training-continued-work-from-ffmcbct">B. CT ↔︎ MC Model Training (Continued work from Ffmcbct)</a></li>
+  <li><a href="#c.-fluence-field-modulated-cbct-ffm-cbct" id="toc-c.-fluence-field-modulated-cbct-ffm-cbct" class="nav-link" data-scroll-target="#c.-fluence-field-modulated-cbct-ffm-cbct">C. Fluence-Field-Modulated CBCT (FFM-CBCT)</a></li>
+  <li><a href="#d.-muon-spectroscopy-beamline-simulation-triumf" id="toc-d.-muon-spectroscopy-beamline-simulation-triumf" class="nav-link" data-scroll-target="#d.-muon-spectroscopy-beamline-simulation-triumf">D. Muon Spectroscopy &amp; Beamline Simulation (TRIUMF)</a></li>
+  <li><a href="#e.-essay-projects" id="toc-e.-essay-projects" class="nav-link" data-scroll-target="#e.-essay-projects">E. Essay Projects</a></li>
+  <li><a href="#f.-dynamic-systems" id="toc-f.-dynamic-systems" class="nav-link" data-scroll-target="#f.-dynamic-systems">F. Dynamic Systems</a></li>
   </ul>
 </nav>
     </div>
@@ -327,8 +357,30 @@ gtag('config', 'G-V2HLWE6MG6', { 'anonymize_ip': true});
 
 
 <p>This page is a log of the stuff I’ve been up to. I’ll add plots, code snippets, descriptions and photos as the projects progress.</p>
-<section id="a.-ct-mc-model-training-continued-work-from-ffmcbct" class="level3">
-<h3 class="anchored" data-anchor-id="a.-ct-mc-model-training-continued-work-from-ffmcbct">A. CT ↔︎ MC Model Training (Continued work from Ffmcbct)</h3>
+<section id="a.-compact-proton-accelerator" class="level3">
+<h3 class="anchored" data-anchor-id="a.-compact-proton-accelerator">A. Compact Proton Accelerator</h3>
+<div class="pair">
+<div class="pair-text">
+<p>The <strong>Dielectric Wall Accelerator (DWA)</strong> project at <em>UHN – Princess Margaret Cancer Centre</em> aims to design and develop compact proton accelerator for proton therapy. This study focuses on building waveguides models and beam physics to manage the complex synchronization required for high-gradient acceleration - towards an energy goal of 250 MeV.</p>
+</div>
+<div class="pair-media">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="photos/dwa_beamline_anim.gif" class="img-fluid figure-img" style="width:100.0%" alt="DWA Beamline Animation"></p>
+<figcaption>Dynamic visualization of DWA modules firing in synchronization with the proton bunch.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Linear Optics Simulation:</strong> Implementing model in <strong>Transoptr</strong> (Fortran) that supports “cells” of multiple firing modules, including realistic spatial gaps.</li>
+<li><strong>Phasing Algorithm:</strong> Numerical root-finding approach to synchronize the nanosecond-scale pulsed electric fields with the traveling proton bunch. This ensures that the reference particle always sees the peak accelerating field as it traverses each module.</li>
+<li><strong>Energy Switch Mode:</strong> Built a dynamic control interface in <strong>pyoptr</strong> to scale the peak electric field (<span class="math inline">\(E_z\)</span>) of individual modules independently. This allows for rapid, pulse-to-pulse energy modulation of the proton beam.</li>
+</ul>
+<hr>
+</section>
+<section id="b.-ct-mc-model-training-continued-work-from-ffmcbct" class="level3">
+<h3 class="anchored" data-anchor-id="b.-ct-mc-model-training-continued-work-from-ffmcbct">B. CT ↔︎ MC Model Training (Continued work from Ffmcbct)</h3>
 <section id="goal-mapping-simulated-ct-to-monte-carlo-mc-phantom." class="level4">
 <h4 class="anchored" data-anchor-id="goal-mapping-simulated-ct-to-monte-carlo-mc-phantom.">Goal: Mapping Simulated CT to Monte Carlo (MC) phantom.</h4>
 <ul>
@@ -356,8 +408,8 @@ gtag('config', 'G-V2HLWE6MG6', { 'anonymize_ip': true});
 <hr>
 </section>
 </section>
-<section id="b.-fluence-field-modulated-cbct-ffm-cbct" class="level3">
-<h3 class="anchored" data-anchor-id="b.-fluence-field-modulated-cbct-ffm-cbct">B. Fluence-Field-Modulated CBCT (FFM-CBCT)</h3>
+<section id="c.-fluence-field-modulated-cbct-ffm-cbct" class="level3">
+<h3 class="anchored" data-anchor-id="c.-fluence-field-modulated-cbct-ffm-cbct">C. Fluence-Field-Modulated CBCT (FFM-CBCT)</h3>
 <div class="pair">
 <div class="pair-text">
 <p>The <strong>Fluence-Field-Modulated Cone-Beam CT (FFM-CBCT)</strong> project at <em>UHN – Princess Margaret Cancer Centre</em> explores how dynamically shaping X-ray fluence in space and time can reduce unnecessary dose while maintaining, or even improving, image quality in regions that matter most.<br>
@@ -486,8 +538,8 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 <hr>
 </section>
 </section>
-<section id="c.-muon-spectroscopy-beamline-simulation-triumf" class="level3">
-<h3 class="anchored" data-anchor-id="c.-muon-spectroscopy-beamline-simulation-triumf">C. Muon Spectroscopy &amp; Beamline Simulation (TRIUMF)</h3>
+<section id="d.-muon-spectroscopy-beamline-simulation-triumf" class="level3">
+<h3 class="anchored" data-anchor-id="d.-muon-spectroscopy-beamline-simulation-triumf">D. Muon Spectroscopy &amp; Beamline Simulation (TRIUMF)</h3>
 <div class="pair">
 <div class="pair-text">
 <ul>
@@ -532,8 +584,8 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 </div>
 </div>
 </section>
-<section id="d.-essay-projects" class="level3">
-<h3 class="anchored" data-anchor-id="d.-essay-projects">D. Essay Projects</h3>
+<section id="e.-essay-projects" class="level3">
+<h3 class="anchored" data-anchor-id="e.-essay-projects">E. Essay Projects</h3>
 <p>These are something I’ve worked on during undergrad either solo or with other students. <em>(others to be added …)</em></p>
 <div class="pair">
 <div class="pair-text">
@@ -566,8 +618,8 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 </div>
 </div>
 </section>
-<section id="e.-dynamic-systems" class="level3">
-<h3 class="anchored" data-anchor-id="e.-dynamic-systems">E. Dynamic Systems</h3>
+<section id="f.-dynamic-systems" class="level3">
+<h3 class="anchored" data-anchor-id="f.-dynamic-systems">F. Dynamic Systems</h3>
 <div class="pair">
 <div class="pair-media">
 <div class="quarto-figure quarto-figure-center">
@@ -1041,7 +1093,7 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 <p><strong><em>This site is still under construction.</em></strong></p>
 </div>
     <div class="nav-footer-right">
-<p>Last updated: Apr 19, 2026</p>
+<p>Last updated: Jan 19, 2026</p>
 </div>
   </div>
 </footer>

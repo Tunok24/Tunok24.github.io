@@ -1,7 +1,7 @@
 ---
 title: ""
-# subtitle: "_“He could think in italics. Such people need watching. Preferably from a safe distance.”_ - T. P. (Men At Arms)"
-subtitle: ""
+subtitle: "..."
+#subtitle: "_“He could think in italics. Such people need watching. Preferably from a safe distance.”_ - T. P. (Men At Arms)"
 
 about:
   template: solana
@@ -49,15 +49,3 @@ capable of retrieving the material properties of scanned objects directly from m
 This combined approach could allow quantitative imaging for proton therapy and stereotactic radiosurgery, 
 where knowing a tissue’s true composition *and location* means tighter range prediction and more accurate dose delivery.
 
-## Earlier threads
-
-::: {.pair}
-::: {.pair-text}
-In high school I was active with [BDOAA](https://bdoaa.org) and represented Bangladesh at IOAA 2018. 
-It was a lot of night skies, problem sets, and lifelong friends. Good ol' times.
-:::
-
-::: {.pair-media}
-![IOAA 2018, Beijing — with the team](photos/lookingattheceilingnotthesky.jpg)
-:::
-:::

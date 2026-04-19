@@ -10,7 +10,27 @@ page-layout: article
 This page is a log of the stuff I've been up to. I’ll add plots, code snippets, descriptions and photos as the projects progress.
 
 
-### A. CT ↔ MC Model Training (Continued work from Ffmcbct)
+### A. Compact Proton Accelerator
+
+::: {.pair}
+::: {.pair-text}
+
+The **Dielectric Wall Accelerator (DWA)** project at *UHN – Princess Margaret Cancer Centre* aims to design and develop compact proton accelerator for proton therapy. 
+This study focuses on building waveguides models and beam physics to manage the complex synchronization required for high-gradient acceleration - towards an energy goal of 250 MeV.
+
+:::
+::: {.pair-media}
+![Dynamic visualization of DWA modules firing in synchronization with the proton bunch.](photos/dwa_beamline_anim.gif){width=100% fig-alt="DWA Beamline Animation"}
+:::
+:::
+
+- **Linear Optics Simulation:** Implementing model in **Transoptr** (Fortran) that supports "cells" of multiple firing modules, including realistic spatial gaps.
+- **Phasing Algorithm:** Numerical root-finding approach to synchronize the nanosecond-scale pulsed electric fields with the traveling proton bunch. This ensures that the reference particle always sees the peak accelerating field as it traverses each module.
+- **Energy Switch Mode:** Built a dynamic control interface in **pyoptr** to scale the peak electric field ($E_z$) of individual modules independently. This allows for rapid, pulse-to-pulse energy modulation of the proton beam.
+
+---
+
+### B. CT ↔ MC Model Training (Continued work from Ffmcbct)
 
 #### Goal: Mapping Simulated CT to Monte Carlo (MC) phantom.
 
@@ -27,7 +47,7 @@ This page is a log of the stuff I've been up to. I’ll add plots, code snippets
 
 ---
 
-### B. Fluence-Field-Modulated CBCT (FFM-CBCT)
+### C. Fluence-Field-Modulated CBCT (FFM-CBCT)
 
 ::: {.pair}
 ::: {.pair-text}
@@ -118,7 +138,7 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 
 ---
 
-### C. Muon Spectroscopy & Beamline Simulation (TRIUMF)
+### D. Muon Spectroscopy & Beamline Simulation (TRIUMF)
 
 ::: {.pair}
 ::: {.pair-text}
@@ -145,7 +165,7 @@ And here's the [abstract](https://aapm2025explorer-production.up.railway.app/det
 :::
 :::
 
-### D. Essay Projects
+### E. Essay Projects
 
 These are something I've worked on during undergrad either solo or with other students. _(others to be added ...)_
 
@@ -168,7 +188,7 @@ These are something I've worked on during undergrad either solo or with other st
 :::
 
 
-### E. Dynamic Systems
+### F. Dynamic Systems
 
 ::: {.pair}
 ::: {.pair-media}
@@ -196,5 +216,3 @@ These are something I've worked on during undergrad either solo or with other st
 3. Descriptions to be added ...
 :::
 :::
-
-
